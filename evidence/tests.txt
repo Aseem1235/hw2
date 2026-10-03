@@ -1,0 +1,29 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /home/csce465/csce465-agentsec/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/csce465/csce465-agentsec/hw2
+collecting ... collected 21 items
+
+tests/test_security.py::test_valid_bidirectional_messages PASSED         [  4%]
+tests/test_security.py::test_modified_record[ciphertext] PASSED          [  9%]
+tests/test_security.py::test_modified_record[header] PASSED              [ 14%]
+tests/test_security.py::test_modified_record[iv] PASSED                  [ 19%]
+tests/test_security.py::test_modified_record[tag] PASSED                 [ 23%]
+tests/test_security.py::test_replay PASSED                               [ 28%]
+tests/test_security.py::test_record_reflection PASSED                    [ 33%]
+tests/test_security.py::test_out_of_order PASSED                         [ 38%]
+tests/test_security.py::test_truncated_record PASSED                     [ 42%]
+tests/test_security.py::test_long_record_rejected PASSED                 [ 47%]
+tests/test_security.py::test_sequence_exhaustion PASSED                  [ 52%]
+tests/test_security.py::test_invalid_signature PASSED                    [ 57%]
+tests/test_security.py::test_incorrect_public_key PASSED                 [ 61%]
+tests/test_security.py::test_handshake_reflection PASSED                 [ 66%]
+tests/test_security.py::test_changed_handshake_fields[peer_public] PASSED [ 71%]
+tests/test_security.py::test_changed_handshake_fields[peer_nonce] PASSED [ 76%]
+tests/test_security.py::test_unexpected_identity PASSED                  [ 80%]
+tests/test_security.py::test_malformed_transcript PASSED                 [ 85%]
+tests/test_security.py::test_handshake_replay PASSED                     [ 90%]
+tests/test_security.py::test_old_handshake_in_new_session PASSED         [ 95%]
+tests/test_security.py::test_fresh_sessions PASSED                       [100%]
+
+============================== 21 passed in 2.70s ==============================

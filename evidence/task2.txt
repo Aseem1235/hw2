@@ -1,0 +1,4 @@
+Gateway and node derived matching keys.
+Fresh session derived different keys.
+Session 1 ID: 679135344894577a
+Session 2 ID: 639e7b61f7fc7a29

@@ -1,0 +1,14 @@
+Original message:
+Receiver processes: {'action': 'READ', 'path': 'notes.txt'}
+
+Attacker modifies READ to LIST:
+Original action bytes: 52454144
+Replacement bytes:    4c495354
+XOR difference:       1e0c1210
+Original ciphertext:  7360be90e9f1f140307ccb05acf6e93297ec63fc49f3e600c36691a497f047e4745bed48
+Modified ciphertext:  7360be90e9f1f140307ccb1ba0e4f93297ec63fc49f3e600c36691a497f047e4745bed48
+Receiver processes: {'action': 'LIST', 'path': 'notes.txt'}
+
+Replay the same modified ciphertext:
+Receiver processes: {'action': 'LIST', 'path': 'notes.txt'}
+The LIST command was processed twice.

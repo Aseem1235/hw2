@@ -1,0 +1,4 @@
+Gateway -> node: (1, b'READ notes.txt')
+Node -> gateway: (1, b'OK')
+Next gateway record: (1, b'LIST')
+Replay rejected: unexpected sequence
